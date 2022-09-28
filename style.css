@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit';
+    background-color: var(--very-dark-blue-main-BG);
+    position: relative;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--very-dark-blue-card-BG);
+    max-width: 280px;
+    position: absolute;
+    padding: 15px;
+    left: 50%;
+    translate: -50%;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.container h1 {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.container h2 {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.ethereums {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.ethereums img {
+    width: 12px;
+}
+
+.time {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.time img {
+    width: 15px;
+}
+
+.avatar {
+
+}
+
+.avatar img {
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

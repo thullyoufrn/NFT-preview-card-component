@@ -34,6 +34,11 @@ body {
         0px 15px 5px 40px rgba(0 0 0 / 5%);
 }
 
+.img {
+    margin: 0;
+    position: relative;
+}
+
 .main-img {
     width: 100%;
     border-radius: 10px;
@@ -140,4 +145,18 @@ hr {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.eye-icon {
+    background-color: var(--cyan);
+    opacity: 0;
+}
+
+.eye-icon img {
+    position: absolute;
+    width: 15px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }

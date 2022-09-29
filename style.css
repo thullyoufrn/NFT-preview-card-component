@@ -1,4 +1,3 @@
-/* add hovers in the end */
 /* edit the footers in the end */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
@@ -46,12 +45,12 @@ body {
     left: 0;
     width: 100%;
     border-radius: 10px;
-    z-index: 1;
 }
 
 .box-active-state {
     min-height: 100%;
     min-height: 100%;
+    opacity: 0;
 }
 
 .box-active-state div {
@@ -61,7 +60,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.5;
     border-radius: 10px;
 }
 
@@ -71,19 +69,27 @@ body {
     left: 50%;
     translate: -50% -50%;
     max-width: 40px;
+}
+
+.box-active-state div.background {
+    opacity: 0.5;
+    /* how to make good transistions? */
+}
+
+.box-active-state:hover {
     opacity: 1;
 }
 
-.box-img:hover {
-    z-index: -1;
-    transition: 0.5s;
-}
-
 .container h1 {
+    display: inline;
     color: var(--white);
     font-weight: 600;
     font-size: 20px;
     margin: 15px 0;
+}
+
+.container h1:hover {
+    color: var(--cyan);
 }
 
 .container h2 {
@@ -147,6 +153,7 @@ hr {
 
 .avatar {
     margin: 0 0 5px 0;
+    align-items: baseline;
 }
 
 .avatar img {
@@ -170,7 +177,12 @@ hr {
 }
 
 .avatar h4:last-of-type {
+    display: inline;
     color: var(--white);
+}
+
+.avatar h4:last-of-type:hover {
+    color: var(--cyan);
 }
 
 .attribution { 

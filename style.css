@@ -1,5 +1,8 @@
-/* why the box and the avatar have problems with the heigth? */
-/* edit the footers in the end */
+/*  
+    Issues:
+    - How can I make a parent the same height as the child?
+    - How can I vertically center elements inside a inline-block div? 
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
@@ -35,22 +38,25 @@ body {
 }
 
 .box {
-    width: 100%;
-    height: 275px;             /* look for a better solution */
+    display: block;
+
+    max-height: auto; 
+    /* How can I fix it? I'd like it to have the same height as the ".box-img" */
+    
     position: relative;
     margin-bottom: 20px;
 }
 
 .box-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    max-width: 100%; 
     border-radius: 10px;
 }
 
 .box-active-state {
-    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
     min-height: 100%;
     opacity: 0;
     transition: 0.4s ease-in-out;
@@ -59,15 +65,12 @@ body {
 
 .box-active-state div {
     background-color: var(--cyan); 
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-}
+    min-width: 100%;
 
-.box-active-state div.background {
+    min-height: 275px;
+    /* How can I fix it? I'd like it to have the same height as the ".box-active-state" */
+
+    border-radius: 10px;
     opacity: 0.5;
 }
 
@@ -90,7 +93,7 @@ body {
     font-size: 20px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 .container h1:hover {
@@ -101,7 +104,7 @@ body {
     color: var(--soft-blue);
     font-weight: 300;
     font-size: 16.5px;
-    margin: 15px 0 24px 0;
+    margin: 0 0 22px 0;
 }
 
 .infos {
@@ -109,6 +112,7 @@ body {
     position: relative;
 }
 
+/* How could I vertically center  the img and h3 of the ".ethereums" ? */
 .ethereums {
     display: inline-block;
 }
@@ -116,8 +120,8 @@ body {
 .ethereums img {
     width: 10px;
     display: inline-block;
-    margin-right: 6px;
-    translate: 0 2px;
+    margin: 0 6px 0 0;
+    translate: 0 20%;
 }
 
 .ethereums h3 {
@@ -135,10 +139,10 @@ body {
 }
 
 .time img {
-    width: 15px;
+    max-width: 15px;
     display: inline-block;
     margin-right: 4px;
-    translate: 0 2.5px;
+    translate: 0 20%;
 }
 
 .time h3 {
@@ -157,23 +161,27 @@ hr {
 }
 
 .avatar {
+    display: block;
+
+    /* How can I fix it? I'd like it to have the same height as the ".avatar img" */
     max-height: auto;
 }
+
 
 .avatar img {
     display: inline-block;
     border-radius: 100%;
     border: 1px solid var(--white);
-    margin: 0 10px 0 0;
     max-width: 30px;
+    margin: 0 12px 0 0;
 }
 
 .avatar h4 {
     display: inline-block;
-    translate: 0 -50%;
     font-size: 14px;
     font-weight: 300;
     margin: 0;
+    translate: 0 -60%;
 }
 
 .avatar h4:first-of-type {
@@ -191,12 +199,17 @@ hr {
 }
 
 .attribution { 
-    /* display: block; */
-    font-size: 11px; 
+    display: block;
+    font-size: 14px;
+    font-weight: 300; 
     text-align: center; 
+    color: var(--white);
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--soft-blue)
 }
-

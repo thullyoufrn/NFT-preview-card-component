@@ -2,7 +2,7 @@
 
 ## The result
 
-Preview the site by clicking [here]()!
+Preview the site by clicking [here](https://chic-crumble-bb1151.netlify.app/)!
 
 This was my second Frontend Mentor challenge and I am really proud of the result I got. 
 

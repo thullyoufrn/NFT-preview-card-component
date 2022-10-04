@@ -14,7 +14,7 @@ During development I was able to practice my CSS skills a lot. It was really nic
 
 ## Next steps
 
-To keep improving and developing myself as a software engineer, I'm gonna study new subjects and build more projects in Frontend Mentor.
+To keep improving and developing myself as a software engineer, I will study new subjects and build more projects in Frontend Mentor.
 
 My next goals are to learn:
 

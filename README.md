@@ -6,7 +6,7 @@ Preview the site by clicking [here]()!
 
 This was my second Frontend Mentor challenge and I am really proud of the result I got. 
 
-![NFT-preview-card-component](./design/NFT-preview-card-component-01.png)
+![NFT-preview-card-component](./design/NFT-preview-card-component-02.png)
 
 ## The process
 
